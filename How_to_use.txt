@@ -1,0 +1,22 @@
+First you need to set up the wealens_pipeline, its like installing some software for usage.
+You may need to follow the following steps.i(Remember pipeline is written for python2, If you want to see how to install a package for particular version of python( I am assuming you may have installed diffrent versions of pythons simultenously) required to run pipeline the "commands*.txt" might be helpful to you"
+
+
+
+
+
+Run following commands:
+
+Step1: pip install --user -r requirements.txt
+
+Step2: sudo python2 setup.py install
+
+Step3 : python weaklens_aroundsource.py --config configfile
+
+Probably you will encounter many errors while executing above commands(specificaly Step2). Those are because of lack of required libraries. Most of ommands to install those libraries are in "commands*.txt".I would advise you to look at "commands*.txt" before trying other methods.
+
+
+
+
+
+
