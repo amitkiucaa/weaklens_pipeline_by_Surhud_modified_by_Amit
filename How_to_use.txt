@@ -1,5 +1,5 @@
 First you need to set up the wealens_pipeline, its like installing some software for usage.
-You may need to follow the following steps.i(Remember pipeline is written for python2, If you want to see how to install a package for particular version of python( I am assuming you may have installed diffrent versions of pythons simultenously) required to run pipeline the "commands*.txt" might be helpful to you"
+You may need to follow the following steps.i(Remember pipeline is written for python2, If you want to see how to install a package for particular version of python( I am assuming you may have installed diffrent versions of pythons simultenously) required to run pipeline the "commands_needed_to_setup_pipeline.txt" might be helpful to you"
 
 
 
