@@ -1,0 +1,32 @@
+ 1929  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 1933  vim setup.py 
+ 1934  python2 setup.py install
+ 1935  CPPFLAGS=-I/path/to/gsl/include python setup.py install
+ 1936  pip install --user -r requirements.txt
+ 1937  clear
+ 1943  python2 setup.py install
+ 1947  apt-get install swig3.0
+ 1948  sudo apt-get install swig3.0
+ 1950  python2 setup.py install
+ 1951  sudo apt-get install swig
+ 1952  python2 setup.py install
+ 1956  sudo apt-get install libgsl-dev
+ 1957  dpkg -s gs
+ 1958  dpkg -s gsl-
+ 1960  python2 setup.py install
+ 1961  sudo apt-get install libboost-all-dev
+ 1963  python2 setup.py install
+ 1964  sudo python2 setup.py install
+ 1968  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 1969  pip install --user frogress
+ 1970  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 1977  sudo python2.7 -m pip install frogress
+ 1979  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 1980  sudo python2.7 -m pip install pandas
+ 1982  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 1983  sudo python2.7 -m pip install fitsio
+ 1985  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 1986  sudo python2.7 -m pip install sqlitedict
+ 1987  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 1988  sudo python2.7 -m pip install gnupg
+ 1990  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
