@@ -1,5 +1,6 @@
 First you need to set up the wealens_pipeline, its like installing some software for usage.
-You may need to follow the following steps.Remember pipeline is written for python2, If you want to see how to install a package for particular version of python(  am assuming you may have installed diffrent versions of pythons simultenously) required to run pipeline the "commands_needed_to_setup_pipeline.txt" might be helpful to you"
+
+You may need to follow the following steps. Remember the pipeline is written for python2, so it will need some of the packages installed in python2.7 in libraries, If you want to see how to install a package for particular version of python(am assuming you may have installed diffrent versions of pythons simultenously), required to run pipeline, you will find   "commands_needed_to_setup_pipeline.txt"  helpful.
 
 
 
@@ -7,16 +8,21 @@ You may need to follow the following steps.Remember pipeline is written for pyth
 
 Run following commands:
 
+
+
+
 Step1: pip install --user -r requirements.txt
 
-Step2: sudo python2 setup.py install
+Step2: sudo python2 setup.py install   # Read lines written after step3
 
-Step3 : python weaklens_aroundsource.py --config configfile
-
-Probably you will encounter many errors while executing above commands(specificaly Step2). Those are because of lack of required libraries. Most of ommands to install those libraries are in "commands*.txt".I would advise you to look at "commands*.txt" before trying other methods.
-
-Note: Step1 & 2 need to be done once. Then everytime for running pipeline you just need to execute step3 only.
+Step3 : python weaklens_aroundsource.py --config configfile    
 
 
+
+Probably you will encounter many errors while executing above commands(specificaly Step2). Those are because of lack of required libraries installed  needed for smooth execution of setup.py.Most of the commands needed  to install those libraries are in "commands_needed_to_setup_pipeline.txt". I would advise you to have a glimpse of the commands in  this file  before heading towards something else.
+
+Note: Step1 & 2 need to be done once. Then everytime for signal computation you just need to execute only step3.
+
+For step3 to get executed properly you need to have "DataStore/S16A_v2.0" folder and its content in your local(or give the path to it for this info), besides files having RA,Dec,Z,wt info for lenses.
 
 

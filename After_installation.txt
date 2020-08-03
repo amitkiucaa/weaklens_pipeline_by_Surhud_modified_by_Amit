@@ -1,11 +1,14 @@
 
 Now you know that your weaklens_pipeline is ready to use.
-
-
 You need to chagne two files
+
+
 
 weaklens_select.py
 Readme.config                          #or you can create a copy of Readme.config and use that, However I recommend not to make dummy file of weaklens_select.py but you may.
+
+
+
 
 
 
@@ -13,8 +16,9 @@ In weaklens_select.py
 
 You need to give info of your lenses ie Ra,Dec,Z,wt
 
-So load your file contating this info for lenses and return this info as array.
-There are alraedy many such inbuilt lenses written, you add your lens info also in the file.
+So load your file contating this info for lenses and return this info as arrays.
+There are alraedy many such sections written for available  lenses, you add your lens info also in the file.
+This info need to be gine in subsections under lens_select() 
 
 Nothing else you have to change in this file.
 
@@ -22,9 +26,15 @@ Nothing else you have to change in this file.
 
 
 
+
+
+
+
+
+
 In Readme.config
 
-I have made a similar file to Readme.confit that is redmapper_satellites.config. You compare these two files and see. What you need to do.
+I have created a similar file to Readme.config, wtih name  "redmapper_satellites.config". You compare these two files and understand, what you need to do.
 
 
 
