@@ -8,15 +8,12 @@ step4  ./configure --prefix=/mnt/home/student/camit/.local/lib/python3.7/site-pa
 step5   make                                                          # Help: Installation_process
 step6   make check                                                    # Help: Installation_process
 step7   make install                                                  # Help: Installation_process
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
-step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
+step8   vim example.c                                                 # Help: Create a simple c file or Copy the content of example.c(already present in this repository)
+step9   gcc -Wall -I/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/include -c ~/example.c
+                                                                      # Help: Installation_process
+step10  gcc -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/lib  example.o -lgsl -lgslcblas -lm
+                                                                      # Help: Installation_process 
+step11  LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/lib
+                                                                      # Help: Installation_process
+step12  export LD_LIBRARY_PATH                                        # Help: Installation_process
+step3  ./a.out                                                        # Help: Will work without error, if everything is fine
