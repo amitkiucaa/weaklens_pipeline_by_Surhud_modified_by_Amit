@@ -22,3 +22,23 @@ Note: Commands corresponding to Step 11 & 12 sets the path for libraries to be s
  
  
 step3  ./a.out                                                         *Help: Will work without error, if everything went  fine*
+
+
+
+
+
+
+
+
+How to install boost:       Credit [boost-installation](https://www.boost.org/doc/libs/1_66_0/more/getting_started/unix-variants.html)
+
+
+
+
+step1: Download boost from https://www.boost.org/users/history/version_1_66_0.html   *Help: Download boost_1_55_0.tar.gz or you can download other newer available version of gsl*
+step2: tar -zxvf ~/Downloads/boost_1_55_0.tar.gz                                     *Help: Extract the gz file*
+step3  cd boost_1_55_0                                                               *Help: change the directory to boost_1_55_0 *
+step4  ./bootstrap.sh --prefix=/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost
+                                                                                     *Help:  ./configure command checks our system for the required software needed to build the program,prefix to direct where you cwant to intstall gsl*
+step5   ./b2                                                                         *Help: build or made used to build executable programs and libraries from source code*
+step6   .b2 install                                                                  *Help: install the build file*
