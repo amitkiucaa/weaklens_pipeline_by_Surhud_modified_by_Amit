@@ -41,4 +41,4 @@ step3  cd boost_1_55_0                                                          
 step4  ./bootstrap.sh --prefix=/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost
                                                                                      *Help:  ./configure command checks our system for the required software needed to build the program,prefix to direct where you cwant to intstall gsl*
 step5   ./b2                                                                         *Help: build or made used to build executable programs and libraries from source code*
-step6   .b2 install                                                                  *Help: install the build file*
+step6   ./b2 install                                                                  *Help: install the build file*
