@@ -1,5 +1,7 @@
 How to install gsl:
 
+
+
 step1: wget ftp://ftp.gnu.org/gnu/gsl/gsl-2.6.tar.gz                  # Help: this will download gsl-2.6  or you can download other newer available version of gsl
 step2: tar -zxvf ~/Downloads/gsl-2.6.tar.gz                           # Help: Extract the gz file
 step3  cd gsl-2.6/                                                    # Help: change the directory to gsl-2.6
