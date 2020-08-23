@@ -1,4 +1,13 @@
- 1929  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+ 
+ 
+ it is easy to set piepline on local machine(i installed it for python2). To set on server you need some extra efforts (i am appending some of those efforts in commads, please mind these efforts were for py3)
+ 
+ 
+ 
+ 
+ 
+ 
+ 1929 python2 weaklens_aroundsource.py --config redmapper_satellites.config 
  1933  vim setup.py 
  1934  python2 setup.py install
  1935  CPPFLAGS=-I/path/to/gsl/include python setup.py install
@@ -30,3 +39,28 @@
  1987  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
  1988  sudo python2.7 -m pip install gnupg
  1990  python2 weaklens_aroundsource.py --config redmapper_satellites.config 
+
+
+
+
+
+py3 on server come commands
+
+   71  python setup.py install --install-scripts /mnt/home/student/camit/.local/lib/python3.7/site-packages/weaklens_pipeline_installation
+  154  pip install boost -t /mnt/home/student/camit/.local/lib/python3.7/site-packages/weaklens_pipeline_installation/
+  633  CPPFLAGS="-I/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/include/ -I/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include"  python setup.py install
+  634  CPPFLAGS="-I/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/include/ -I/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include"  python setup.py install --user
+  649  CPPFLAGS="-I/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/include/ -I/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include"  LDFLAGS="-L/mnt/csoft/compilers/mpich-3.3.1/lib64 -L/mnt/csoft/compilers/gcc-8.2.0/lib64 -L/mnt/csoft/tools/anaconda3/lib -L/mnt/csoft/tools/anaconda3/lib64 -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/lib -L/mnt/home/student/camit/.local/lib/python3.7/site-packages -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/lib"  python setup.py install
+  650  CPPFLAGS="-I/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/include/ -I/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include"  LDFLAGS="-L/mnt/csoft/compilers/mpich-3.3.1/lib64 -L/mnt/csoft/compilers/gcc-8.2.0/lib64 -L/mnt/csoft/tools/anaconda3/lib -L/mnt/csoft/tools/anaconda3/lib64 -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/lib -L/mnt/home/student/camit/.local/lib/python3.7/site-packages -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/lib"  python setup.py install --user
+  693  LD_LIBRARY_PATH=/mnt/csoft/compilers/mpich-3.3.1/lib64:/mnt/csoft/compilers/gcc-8.2.0/lib64:/mnt/csoft/tools/anaconda3/lib:/mnt/csoft/tools/anaconda3/lib64:/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/lib:/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include:/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/lib:/mnt/home/student/camit/.local/lib/python3.7/site-packages
+  694  python weaklens_aroundsource.py --config arindam_lenses_random_rotation.config
+  700  pip install frogress -t ~/.local/lib/python3.7/site-packages/
+  704  python weaklens_aroundsource.py --config arindam_lenses_random_rotation.config
+  949  python weaklens_aroundsource.py --config arindam_lenses_random_rotation.config
+  950  vim weaklens_select.py
+  951  vim arindam_lenses.config
+  952  python weaklens_aroundsource.py --config arindam_lenses.config
+  979  mpirun -np 10 mpi_weaklens_aroundsource.py --config arindam_lenses_random_rotation.config
+  980  mpirun -np 10 python  mpi_weaklens_aroundsource.py --config arindam_lenses_random_rotation.config
+  999  history >history.txt
+
