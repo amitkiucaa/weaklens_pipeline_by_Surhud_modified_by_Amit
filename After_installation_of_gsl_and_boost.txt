@@ -1,13 +1,19 @@
 You have to setup the weaklens pipeline
 
+your python compiler need gsl and boost written for handling c++ files for this weaklens_pipeline installlation.(For gsl and boost intallation see : how_to_install_gsl_boost.txt
+
+We need to set cpp flags for path of gsl and boost location(first you need to install these libraries then give path)
 
 
+step1: CPPFLAGS="-I/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/include/ -I/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include"  LDFLAGS="-L/mnt/csoft/compilers/mpich-3.3.1/lib64 -L/mnt/csoft/compilers/gcc-8.2.0/lib64 -L/mnt/csoft/tools/anaconda3/lib -L/mnt/csoft/tools/anaconda3/lib64 -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/lib -L/mnt/home/student/camit/.local/lib/python3.7/site-packages -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include -L/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/lib"  python setup.py install
 
+The above commad setup cppflags for path of gsl and boost libraries along with seeting ldflags for searching for the libraries for python packages you need for installation. As you will see below multiple paths separated by colon(:) are given to LD_LIBRARY_PATH, for python compiler to search for  diffrent packages 
 
+LD_LIBRARY_PATH=/mnt/csoft/compilers/mpich-3.3.1/lib64:/mnt/csoft/compilers/gcc-8.2.0/lib64:/mnt/csoft/tools/anaconda3/lib:/mnt/csoft/tools/anaconda3/lib64:/mnt/home/student/camit/.local/lib/python3.7/site-packages/gsl_installation/lib:/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/include:/mnt/home/student/camit/.local/lib/python3.7/site-packages/install_boost/lib:/mnt/home/student/camit/.local/lib/python3.7/site-packages
 
+(put this LD_LIBRARY_PATH  in your ~/.bashrc file)
 
-
-
+If step1 complete without any error, that means your pipeline is now set up and ready for usage.
 
 
 
@@ -21,7 +27,7 @@ You need to chagne two files
 
 
 weaklens_select.py
-Readme.config                          #or you can create a copy of Readme.config and use that, However I recommend not to make dummy file of weaklens_select.py but you may.
+Readme.config                          #or you can create a copy of Readme.config and use that, However I recommend not to make dummy file of weaklens_select.py                                           but you may.
 
 
 
@@ -34,7 +40,7 @@ You need to give info of your lenses ie Ra,Dec,Z,wt
 
 So load your file contating this info for lenses and return this info as arrays.
 There are alraedy many such sections written for available  lenses, you add your lens info also in the file.
-This info need to be gine in subsections under lens_select() 
+This info need to be given in subsections under lens_select() 
 
 Nothing else you have to change in this file.
 
@@ -48,7 +54,7 @@ Nothing else you have to change in this file.
 
 
 
-In Readme.config
+In Readme.config( help for setting up this file is given in README.md)
 
 I have created a similar file to Readme.config, wtih name  "redmapper_satellites.config". You compare these two files and understand, what you need to do.
 
@@ -58,7 +64,7 @@ I have created a similar file to Readme.config, wtih name  "redmapper_satellites
 
 
 after doing this:
- you are ready to run the pipeline by typing command like below.
+you are ready to run the pipeline by typing command like below.
 
 python weaklens_aroundsource.py --config configfile
 
