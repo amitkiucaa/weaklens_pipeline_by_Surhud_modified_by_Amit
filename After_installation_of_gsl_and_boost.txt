@@ -1,3 +1,19 @@
+You have to setup the weaklens pipeline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Now you know that your weaklens_pipeline is ready to use.
 You need to chagne two files
